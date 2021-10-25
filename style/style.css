@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+}
+#body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  height: 50vh;
+  width: 30%;
+  /* border: 2px solid black; */
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 1px 1px 25px rgba(245, 222, 179, 0.274);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  scale: 1.5;
+  padding: 10px 3px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.container .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+  margin: 15px 0;
+}
+.container .heading h2 {
+  font-family: "Lobster", cursive;
+  font-size: 70px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px white;
+}
+.container .heading p {
+  color: rgba(238, 238, 238, 0.952);
+}
+.container .details-box form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width: 80%; */
+}
+.container .details-box form label {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .details-box input {
+  width: 75%;
+  height: 25px;
+  margin-top: 3px;
+  text-indent: 5px;
+  font-size: 12pt;
+  border-radius: 5px;
+  border: solid 1.5px #d3d3d3;
+  -webkit-transition: 1s; /* Safari */
+  transition: 1s;
+}
+.container .details-box input[type="text"]:hover {
+  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+}
+.container .details-box input[type="text"]:focus {
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+  outline-width: 0px;
+}
+.container .details-box form #tableNumber {
+  width: 30%;
+}
+.container .details-box form #mobileNumber {
+  width: 55%;
+}
+.container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .button button {
+  color: aliceblue;
+  padding: 10px 26px;
+  font-size: 22px;
+  border-radius: 12px;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border: none;
+  /* background: rgba(255, 255, 255, 0.1); */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+@media only screen and (max-width: 750px) {
+  .container {
+    min-height: 70vh;
+    /* max-height: auto; */
+    width: 94%;
+    scale: 1;
+    padding: 20px 0;
+  }
+  container .heading h2 {
+    font-size: 42px;
+    -webkit-text-stroke: 0.1px white;
+  }
+  .container .details-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 80%; */
+  }
+  .container .details-box form label {
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: 500;
+  }
+  .container .details-box form input {
+    margin-bottom: 15px;
+    width: 130%;
+  }
+  .container .details-box form #tableNumber {
+    width: 130%;
+  }
+  .container .details-box form #mobileNumber {
+    width: 130%;
+  }
+}

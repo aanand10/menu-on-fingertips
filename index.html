@@ -4,9 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developers Hotel</title>
+    <!-- style  -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- vanta js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <!-- title  -->
+    <title>Hotel Elite</title>
   </head>
-  <body>
-    <h1 style="text-align: center">Comming soon...</h1>
+  <body id="body">
+    <!--! login page  -->
+    <div class="container" id="container">
+      <div class="heading">
+        <h2>Hotel Elite</h2>
+        <p>(Please fill the following data)</p>
+      </div>
+      <div class="details-box">
+        <form action="">
+          <label for="tableNumber">Table Number : </label>
+          <input type="number" id="tableNumber" name="tableNumber" />
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="name" />
+          <label for="mobileNumber">Mobile Number :</label>
+          <input type="number" id="mobileNumber" name="mobileNumber" />
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" />
+        </form>
+        <div class="button">
+          <button>Proceed</button>
+        </div>
+      </div>
+    </div>
+
+    <!--===================== script =================== -->
+
+    <script>
+      VANTA.WAVES({
+        el: "#body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+      });
+    </script>
   </body>
 </html>
