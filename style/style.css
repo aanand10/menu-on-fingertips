@@ -79,21 +79,31 @@ input[type="number"] {
 }
 .container .details-box input {
   width: 75%;
-  height: 25px;
+  /*height: 25px;
+  */
   margin-top: 3px;
+  padding: 12px;
   text-indent: 5px;
   font-size: 12pt;
   border-radius: 5px;
   border: solid 1.5px #d3d3d3;
-  -webkit-transition: 1s; /* Safari */
+  -webkit-transition: 1s;
+  /*Safari*/
   transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  text-align: center;
+  font-size: 20px;
 }
 .container .details-box input[type="text"]:hover {
-  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+  box-shadow: 0 0 5pt 0.5pt #d3d3d377;
+  /* background-color: rgba(0, 0, 0, 0.164); */
 }
 .container .details-box input[type="text"]:focus {
-  box-shadow: 0 0 5pt 2pt #d3d3d3;
+  box-shadow: 0 0 5pt 2pt #d3d3d377;
   outline-width: 0px;
+  /* background-color: rgba(0, 0, 0, 0.164); */
 }
 .container .details-box form #tableNumber {
   width: 30%;
@@ -126,7 +136,7 @@ input[type="number"] {
 }
 @media only screen and (max-width: 750px) {
   .container {
-    min-height: 70vh;
+    min-height: 80vh;
     /* max-height: auto; */
     width: 94%;
     scale: 1;
