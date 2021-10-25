@@ -48,7 +48,7 @@ input[type="number"] {
   align-items: center;
   flex-direction: column;
   color: aliceblue;
-  margin: 15px 0;
+  margin-bottom: 25px;
 }
 .container .heading h2 {
   font-family: "Lobster", cursive;
@@ -136,11 +136,16 @@ input[type="number"] {
 }
 @media only screen and (max-width: 750px) {
   .container {
-    min-height: 80vh;
+    /* min-height: 80vh;
+    h */
+    height: auto;
     /* max-height: auto; */
     width: 94%;
     scale: 1;
-    padding: 20px 0;
+    padding: 31px 0;
+  }
+  container .heading {
+    margin-bottom: 15px;
   }
   container .heading h2 {
     font-size: 42px;
