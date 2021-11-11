@@ -115,7 +115,6 @@ html {
   -webkit-backdrop-filter: blur(9px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-
   background: linear-gradient(
     -45deg,
     #3f00b58e,
@@ -124,15 +123,23 @@ html {
     #3f00b588
   );
   background-size: 800% 400%;
-  /* padding: 1em 2em; */
+  /*padding: 1em 2em;
+  */
   display: inline-block;
   border: none;
   border-radius: 10px;
-  /* font-size: 17px; */
+  /*font-size: 17px;
+  */
   font-weight: 700;
   color: #def2ff;
-  transition: all 0.5s ease-in-out;
-  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+  transition: all 0.9s ease-in-out;
+  animation: gradient 13s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+  -webkit-animation: gradient 13s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99)
+    both;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
 }
 .landing_page .buttons_and_title .buttons .main-buttons:hover {
   animation: gradient 3s infinite;
@@ -151,6 +158,8 @@ html {
   animation: gradient 3s infinite;
   transform: scale(0.8);
   color: white;
+  border: 1px solid white;
+  padding: 3px;
   -webkit-animation: gradient 3s infinite;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
