@@ -46,16 +46,18 @@
 .landing_page .buttons_and_title {
   width: 100%;
   /* border: 1px solid blue; */
-  height: 68vh;
+  height: 71vh;
   display: flex;
   flex-wrap: wrap;
 }
 .landing_page .buttons_and_title h3 {
   color: white;
-  margin: 10px 5px;
+  margin: 6px 5px;
   /* border: 1px solid red; */
   height: 3vh;
   font-size: 28px;
+  margin-left: 25px;
+  margin-bottom: -;
 }
 .landing_page .buttons_and_title .buttons {
   display: flex;
