@@ -65,8 +65,14 @@
 }
 .landing_page .main-container .corosal .landing-image {
   height: 100%;
-  /* border: white 1px solid; */
+  /*border: white 1px solid;
+  */
   width: 100%;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 .landing_page .buttons_and_title {
   width: 100%;
