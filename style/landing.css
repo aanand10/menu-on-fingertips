@@ -136,15 +136,26 @@ html {
 }
 .landing_page .buttons_and_title .buttons .main-buttons:hover {
   animation: gradient 3s infinite;
-  transform: scale(1.05);
+  transform: scale(1);
   box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.486);
   color: white;
+  border: 1px solid white;
+  padding: 3px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 .landing_page .buttons_and_title .buttons .main-buttons:active {
   animation: gradient 3s infinite;
   transform: scale(0.8);
   color: white;
+  -webkit-animation: gradient 3s infinite;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
 }
 
 @keyframes gradient {
