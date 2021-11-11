@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +22,31 @@
 .landing_page .navbar {
   height: 7vh;
   width: 100%;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  /* border: 1px solid red; */
+  padding: 0 10px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  /* border-radius: 10px; */
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+.landing_page .navbar h1 {
+  font-size: 45px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  color: #def2ff;
+  /* background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent; */
+  /* -webkit-text-stroke: 0.5px white; */
 }
 .landing_page .main-container {
   height: 93vh;
@@ -36,7 +61,7 @@
   display: flex;
   flex-direction: row;
   /* overflow: ; */
-  background: red;
+  /* background: red; */
 }
 .landing_page .main-container .corosal .landing-image {
   height: 100%;
@@ -52,12 +77,13 @@
 }
 .landing_page .buttons_and_title h3 {
   color: white;
-  margin: 6px 5px;
+  margin: 6px auto;
+  margin-top: 12px;
   /* border: 1px solid red; */
   height: 3vh;
   font-size: 28px;
-  margin-left: 25px;
-  margin-bottom: -20px;
+  /* margin-left: 25px; */
+  margin-bottom: -15px;
 }
 .landing_page .buttons_and_title .buttons {
   display: flex;
@@ -70,7 +96,7 @@
   /* background-color: #ffffff; */
 }
 .landing_page .buttons_and_title .buttons .main-buttons {
-  width: 95%;
+  width: 90%;
   height: 100px;
   margin: 5px;
   border-radius: 50px;
@@ -80,9 +106,57 @@
   -webkit-backdrop-filter: blur(9px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+
+  background: linear-gradient(
+    -45deg,
+    #3f00b58e,
+    #a069fe85,
+    #27c8b87c,
+    #3f00b588
+  );
+  background-size: 800% 400%;
+  /* padding: 1em 2em; */
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  /* font-size: 17px; */
+  font-weight: 700;
+  color: #def2ff;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+.landing_page .buttons_and_title .buttons .main-buttons:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.486);
+  color: white;
+}
+
+.landing_page .buttons_and_title .buttons .main-buttons:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+  color: white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .landing_page .buttons_and_title .buttons .main-buttons a {
-  color: white;
+  color: #def2ff;
   font-size: 27px;
   text-decoration: none;
+}
+.landing_page .buttons_and_title .buttons .main-buttons:hover a {
+  text-shadow: 2px 2px 25px rgba(0, 0, 0, 0.383);
+  color: white;
 }
