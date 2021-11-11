@@ -111,6 +111,12 @@ input[type="number"] {
 .container .details-box form #mobileNumber {
   width: 55%;
 }
+.container .details-box form .submit-button a {
+  height: auto;
+  /* border: 1px solid blue; */
+  text-decoration: none;
+  color: white;
+}
 .container .details-box form .submit-button {
   color: aliceblue;
   padding: 10px 26px;
@@ -130,6 +136,7 @@ input[type="number"] {
   border: 1px solid;
   margin-top: 20px;
 }
+
 .container .button {
   display: flex;
   justify-content: center;
@@ -152,10 +159,6 @@ input[type="number"] {
   -webkit-backdrop-filter: blur(8.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-/* landing page  */
-.landing_page {
 }
 
 @media only screen and (max-width: 750px) {
