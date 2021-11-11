@@ -57,14 +57,14 @@
   height: 3vh;
   font-size: 28px;
   margin-left: 25px;
-  margin-bottom: -;
+  margin-bottom: -20px;
 }
 .landing_page .buttons_and_title .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 65vh;
+  height: 60vh;
   width: 100%;
   /* border: 1px solid coral; */
   /* background-color: #ffffff; */
@@ -84,4 +84,5 @@
 .landing_page .buttons_and_title .buttons .main-buttons a {
   color: white;
   font-size: 27px;
+  text-decoration: none;
 }
